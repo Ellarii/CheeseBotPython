@@ -25,6 +25,7 @@ async def gen(ctx):
   embed=discord.Embed(title="The cheese you have generated is:")
   embed.set_image(url=cheeselist)
   embed.set_author(name=ctx.author.display_name, icon_url=ctx.author.avatar_url)
+  embed.set_footer(text="Source: Misc Wikipedia Images")
   await ctx.send("Generation Successful!", embed=embed)
 @client.command(name="ping", help="Pings bot to check whether it is active.")
 async def ping(ctx):
